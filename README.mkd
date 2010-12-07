@@ -1,0 +1,27 @@
+# Schedule Backup #
+
+author: gisanfu
+
+## 說明
+
+這個專案只是讓人方便做日常備份，
+
+詳細說明請參照各檔案內的註解。
+
+## MySQL備份
+
+請建立backup使用者，除了鎖定來源IP以外，
+
+只需要給它select and lock tables by all database的權限就可以了。
+
+## 加到Crontab裡面
+
+這個是加到crontab裡面的
+
+請用一般ubuntu 使用者
+
+然後打crontab -e指令
+
+	01 22 * * * cd /home/gisanfu/svn/app/server-pack && php backup.php day
+	01 07 * * 1 cd /home/gisanfu/svn/app/server-pack && php backup.php week
+	01 03 01 * * cd /home/gisanfu/svn/app/server-pack && php backup.php month
