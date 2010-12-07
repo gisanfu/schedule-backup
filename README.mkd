@@ -8,6 +8,14 @@ author: gisanfu
 
 詳細說明請參照各檔案內的註解。
 
+另外，這個專案是針對Linux主機來做備份，
+
+資料庫的部份是支援PostgreSQL and MySQL，
+
+然後還有遠端的檔案或者是資料夾，
+
+當然這些動作是透過SSH來做的。
+
 ## MySQL備份
 
 請建立backup使用者，除了鎖定來源IP以外，
